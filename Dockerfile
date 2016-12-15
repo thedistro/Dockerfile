@@ -8,6 +8,6 @@ ADD http://mirrors.jenkins-ci.org/war/latest/jenkins.war /opt/jenkins.war
 RUN ln -sf /jenkins /root/.jenkins
 
 ENTRYPOINT ["java", "-jar", "/opt/jenkins.war"]
-EXPOSE 8080
+EXPOSE 8443
 VOLUME ["/jenkins"]
 CMD [""]
